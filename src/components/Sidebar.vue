@@ -9,31 +9,61 @@
       <nav v-if="showSidebar" class="sidebar" role="navigation" aria-label="测试模块导航">
         <h2 class="sidebar-title">测试模块导航</h2>
         <ul>
-          <li v-for="n in 12" :key="n">
-            <router-link :to="`/page/${n}`" class="nav-link">
-              🧪 测试模块 {{ n }}
-            </router-link>
+          <!-- 练习模块 -->
+          <li>
+            <div class="menu-title" @click="toggleMenu('exercise')">
+              ▶️ 练习模块
+            </div>
+            <ul v-show="menuOpen.exercise" class="submenu">
+              <li v-for="n in 16" :key="'exercise-' + n">
+                <router-link :to="`/exercise/${n}`" class="nav-link">练习{{ n }}</router-link>
+              </li>
+            </ul>
           </li>
+
+          <!-- 项目模块 -->
+          <li>
+            <div class="menu-title" @click="toggleMenu('project')">
+              ▶️ 项目模块
+            </div>
+            <ul v-show="menuOpen.project" class="submenu">
+              <li><router-link to="/project/unit" class="nav-link">单元测试</router-link></li>
+              <li><router-link to="/project/integration" class="nav-link">集成测试</router-link></li>
+              <li><router-link to="/project/system" class="nav-link">系统测试</router-link></li>
+            </ul>
+          </li>
+
+          <li><router-link to="/test" class="nav-link">页面测试</router-link></li>
+          
         </ul>
       </nav>
     </transition>
   </div>
 </template>
 
+
 <script>
 export default {
   data() {
     return {
-      showSidebar: true
+      showSidebar: true,
+      menuOpen: {
+        exercise: true,
+        project: true
+      }
     }
   },
   methods: {
     toggleSidebar() {
       this.showSidebar = !this.showSidebar
+    },
+    toggleMenu(section) {
+      this.menuOpen[section] = !this.menuOpen[section]
     }
   }
 }
 </script>
+
 
 <style scoped>
 .container {
@@ -111,5 +141,24 @@ li {
 }
 .fade-enter-from, .fade-leave-to {
   opacity: 0;
+}
+
+.menu-title {
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #1f2937;
+  transition: background-color 0.2s;
+}
+
+.menu-title:hover {
+  background-color: #f3f4f6;
+}
+
+.submenu {
+  padding-left: 10px;
+  margin-top: 8px;
 }
 </style>
