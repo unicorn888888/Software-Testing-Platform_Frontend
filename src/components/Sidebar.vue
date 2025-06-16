@@ -32,8 +32,6 @@
               <li><router-link to="/project/system" class="nav-link">系统测试</router-link></li>
             </ul>
           </li>
-
-          <li><router-link to="/test" class="nav-link">页面测试</router-link></li>
           
         </ul>
       </nav>
