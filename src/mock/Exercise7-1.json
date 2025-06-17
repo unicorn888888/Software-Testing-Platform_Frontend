@@ -1,0 +1,15 @@
+[
+  { "id": "TC1", "time": -1, "count": 6, "expectation": "超过范围" },
+  { "id": "TC2", "time": 0, "count": 6, "expectation": 25 },
+  { "id": "TC3", "time": 10, "count": 6, "expectation": 26.5 },
+  { "id": "TC4", "time": 40000, "count": 6, "expectation": 5845 },
+  { "id": "TC5", "time": 44640, "count": 6, "expectation": 6520.12 },
+  { "id": "TC6", "time": 44641, "count": 6, "expectation": "超过范围" },
+  { "id": "TC7", "time": 20000, "count": -1, "expectation": "超过范围" },
+  { "id": "TC8", "time": 20000, "count": 0, "expectation": 2935 },
+  { "id": "TC9", "time": 20000, "count": 1, "expectation": 2935 },
+  { "id": "TC10", "time": 20000, "count": 10, "expectation": 3025 },
+  { "id": "TC11", "time": 20000, "count": 11, "expectation": 3025 },
+  { "id": "TC12", "time": 20000, "count": 12, "expectation": "超过范围" },
+  { "id": "TC13", "time": 20000, "count": 6, "expectation": 2935 }
+]

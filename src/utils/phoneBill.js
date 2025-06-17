@@ -18,55 +18,52 @@ export const phoneBill = ({ A, B }) => {
       if (sides[1] <= 1) {
         rate = discountRate[0]
         money = sides[0] * 0.15 * (1 - rate) + 25
-        return { result: result, money: money }
+        return money
       } else {
         money = sides[0] * 0.15 + 25
-        return { result: result, money: money }
+        return money
       }
     } else if (sides[0] <= 120) {
       if (sides[1] <= 2) {
         rate = discountRate[1]
         money = sides[0] * 0.15 * (1 - rate) + 25
-        return { result: result, money: money }
+        return money
       } else {
         money = sides[0] * 0.15 + 25
-        return { result: result, money: money }
+        return money
       }
     } else if (sides[0] <= 180) {
       if (sides[1] <= 3) {
         rate = discountRate[2]
         money = sides[0] * 0.15 * (1 - rate) + 25
-        return { result: result, money: money }
+        return money
       } else {
         money = sides[0] * 0.15 + 25
-        return { result: result, money: money }
+        return money
       }
     } else if (sides[0] <= 300) {
       if (sides[1] <= 3) {
         rate = discountRate[3]
         money = sides[0] * 0.15 * (1 - rate) + 25
-        return { result: result, money: money }
+        return money
       } else {
         money = sides[0] * 0.15 + 25
-        return { result: result, money: money }
+        return money
       }
     }
     else if (sides[0] <= 44640) {
       if (sides[1] <= 6) {
         rate = discountRate[4]
         money = sides[0] * 0.15 * (1 - rate) + 25
-        return { result: result, money: money }
+        return money
       } else {
         money = sides[0] * 0.15 + 25
-        return { result: result, money: money }
+        return money
       }
     }
   } else {
-    result = '输入无效'
-    return { result: result, money: money }
+    return '超过范围'
   }
 
-  // money = sides[0] * 0.15 * (1 - rate) + 25
-
-  return { result: result, money: money }
+  return money
 }

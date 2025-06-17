@@ -1,0 +1,12 @@
+[
+  { "id": "TC1", "time": 30, "count": 1, "expectation": 29.455 },
+  { "id": "TC2", "time": 30, "count": 2, "expectation": 29.5 },
+  { "id": "TC3", "time": 90, "count": 2, "expectation": 38.2975 },
+  { "id": "TC4", "time": 90, "count": 3, "expectation": 38.5 },
+  { "id": "TC5", "time": 150, "count": 3, "expectation": 47.05 },
+  { "id": "TC6", "time": 150, "count": 4, "expectation": 47.5 },
+  { "id": "TC7", "time": 210, "count": 3, "expectation": 55.7125 },
+  { "id": "TC8", "time": 210, "count": 4, "expectation": 56.5 },
+  { "id": "TC9", "time": 350, "count": 6, "expectation": 75.925 },
+  { "id": "TC10", "time": 350, "count": 11, "expectation": 77.5 }
+]

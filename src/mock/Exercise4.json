@@ -1,0 +1,154 @@
+[
+  {
+    "id": "TS1",
+    "hostQty": 0,
+    "monitorQty": 40,
+    "peripheralQty": 45,
+    "expectedSales": -1,
+    "expectedCommission": -1
+  },
+  {
+    "id": "TS2",
+    "hostQty": 35,
+    "monitorQty": 0,
+    "peripheralQty": 45,
+    "expectedSales": -1,
+    "expectedCommission": -1
+  },
+  {
+    "id": "TS3",
+    "hostQty": 35,
+    "monitorQty": 40,
+    "peripheralQty": 0,
+    "expectedSales": -1,
+    "expectedCommission": -1
+  },
+  {
+    "id": "TS4",
+    "hostQty": 1,
+    "monitorQty": 40,
+    "peripheralQty": 45,
+    "expectedSales": 3250,
+    "expectedCommission": 650
+  },
+  {
+    "id": "TS5",
+    "hostQty": 35,
+    "monitorQty": 1,
+    "peripheralQty": 45,
+    "expectedSales": 2930,
+    "expectedCommission": 586
+  },
+  {
+    "id": "TS6",
+    "hostQty": 35,
+    "monitorQty": 40,
+    "peripheralQty": 1,
+    "expectedSales": 2120,
+    "expectedCommission": 424
+  },
+  {
+    "id": "TS7",
+    "hostQty": 2,
+    "monitorQty": 40,
+    "peripheralQty": 45,
+    "expectedSales": 3275,
+    "expectedCommission": 655
+  },
+  {
+    "id": "TS8",
+    "hostQty": 35,
+    "monitorQty": 2,
+    "peripheralQty": 45,
+    "expectedSales": 2960,
+    "expectedCommission": 592
+  },
+  {
+    "id": "TS9",
+    "hostQty": 35,
+    "monitorQty": 40,
+    "peripheralQty": 2,
+    "expectedSales": 2165,
+    "expectedCommission": 433
+  },
+  {
+    "id": "TS10",
+    "hostQty": 35,
+    "monitorQty": 40,
+    "peripheralQty": 45,
+    "expectedSales": 4100,
+    "expectedCommission": 820
+  },
+  {
+    "id": "TS11",
+    "hostQty": 69,
+    "monitorQty": 40,
+    "peripheralQty": 45,
+    "expectedSales": 4950,
+    "expectedCommission": 990
+  },
+  {
+    "id": "TS12",
+    "hostQty": 35,
+    "monitorQty": 78,
+    "peripheralQty": 45,
+    "expectedSales": 5240,
+    "expectedCommission": 1048
+  },
+  {
+    "id": "TS13",
+    "hostQty": 35,
+    "monitorQty": 40,
+    "peripheralQty": 88,
+    "expectedSales": 6035,
+    "expectedCommission": 1207
+  },
+  {
+    "id": "TS14",
+    "hostQty": 70,
+    "monitorQty": 40,
+    "peripheralQty": 45,
+    "expectedSales": 4975,
+    "expectedCommission": 995
+  },
+  {
+    "id": "TS15",
+    "hostQty": 35,
+    "monitorQty": 80,
+    "peripheralQty": 45,
+    "expectedSales": 5300,
+    "expectedCommission": 1060
+  },
+  {
+    "id": "TS16",
+    "hostQty": 35,
+    "monitorQty": 40,
+    "peripheralQty": 90,
+    "expectedSales": 6125,
+    "expectedCommission": 1225
+  },
+  {
+    "id": "TS17",
+    "hostQty": 71,
+    "monitorQty": 40,
+    "peripheralQty": 45,
+    "expectedSales": -1,
+    "expectedCommission": -1
+  },
+  {
+    "id": "TS18",
+    "hostQty": 35,
+    "monitorQty": 81,
+    "peripheralQty": 45,
+    "expectedSales": -1,
+    "expectedCommission": -1
+  },
+  {
+    "id": "TS19",
+    "hostQty": 35,
+    "monitorQty": 40,
+    "peripheralQty": 91,
+    "expectedSales": -1,
+    "expectedCommission": -1
+  }
+]
