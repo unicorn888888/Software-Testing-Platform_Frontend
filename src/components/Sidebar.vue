@@ -27,6 +27,7 @@
               ▶️ 项目模块
             </div>
             <ul v-show="menuOpen.project" class="submenu">
+              <li><router-link to="/project/StaticTest" class="nav-link">静态测试</router-link></li>
               <li><router-link to="/project/unit" class="nav-link">单元测试</router-link></li>
               <li><router-link to="/project/integration" class="nav-link">集成测试</router-link></li>
               <li><router-link to="/project/system" class="nav-link">系统测试</router-link></li>

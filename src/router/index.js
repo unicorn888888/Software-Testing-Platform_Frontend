@@ -1,17 +1,42 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import Unit from '../views/Project/Unit.vue'
-import Integration from '../views/Project/Integration.vue'
-import System from '../views/Project/System.vue'
-// import test from '../views/Exercise/Test/Exercise1.vue'
+//import Unit from '../views/Project/Unit/Unit.vue'
+//import Integration from '../views/Project/Integration/Integration.vue'
+//import System from '../views/Project/System/System.vue'
+import Statictest from '../views/Project/StaticTest.vue'
 
 
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/project/unit', component: Unit },
-  { path: '/project/integration', component: Integration },
-  { path: '/project/system', component: System },
+  { path: '/Project/Statictest', component: Statictest },
+  {
+    path: '/Project/Unit',
+    component: () => import('@/views/Project/Unit/Unit.vue'),
+    children: [
+      {path: 'TestStrategy',component: () => import('@/views/Project/Unit/TestStrategy.vue')},
+      {path: 'TestCase',component: () => import('@/views/Project/Unit/TestCase.vue')},
+      {path: 'TestResults',component: () => import('@/views/Project/Unit/TestResults.vue')},
+    ]
+   },
+   {
+    path: '/Project/Integration',
+    component: () => import('@/views/Project/Integration/Integration.vue'),
+    children: [
+      {path: 'TestStrategy',component: () => import('@/views/Project/Integration/TestStrategy.vue')},
+      {path: 'TestCase',component: () => import('@/views/Project/Integration/TestCase.vue')},
+      {path: 'TestResults',component: () => import('@/views/Project/Integration/TestResults.vue')},
+    ]
+   },
+   {
+    path: '/Project/system',
+    component: () => import('@/views/Project/system/system.vue'),
+    children: [
+      {path: 'TestStrategy',component: () => import('@/views/Project/system/TestStrategy.vue')},
+      {path: 'TestCase',component: () => import('@/views/Project/system/TestCase.vue')},
+      {path: 'TestResults',component: () => import('@/views/Project/system/TestResults.vue')},
+    ]
+   },
   {
     path: '/exercise/1',
     component: () => import('@/views/Exercise/Exercise1/Exercise1.vue'),
