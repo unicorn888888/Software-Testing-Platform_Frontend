@@ -7,10 +7,10 @@ import Home from '../views/Home.vue'
 // import Exercise5 from '../views/Exercise/Exercise5.vue'
 // import Exercise6 from '../views/Exercise/Exercise6.vue'
 // import Exercise7 from '../views/Exercise/Exercise7.vue'
-import Exercise8 from '../views/Exercise/Exercise8.vue'
-import Exercise9 from '../views/Exercise/Exercise9.vue'
-import Exercise10 from '../views/Exercise/Exercise10.vue'
-import Exercise11 from '../views/Exercise/Exercise11.vue'
+// import Exercise8 from '../views/Exercise/Exercise8.vue'
+// import Exercise9 from '../views/Exercise/Exercise9.vue'
+// import Exercise10 from '../views/Exercise/Exercise10.vue'
+// import Exercise11 from '../views/Exercise/Exercise11.vue'
 import Exercise12 from '../views/Exercise/Exercise12.vue'
 import Exercise13 from '../views/Exercise/Exercise13.vue'
 import Exercise14 from '../views/Exercise/Exercise14.vue'
@@ -32,10 +32,10 @@ const routes = [
   // { path: '/exercise/5', component: Exercise5 },
   // { path: '/exercise/6', component: Exercise6 },
   // { path: '/exercise/7', component: Exercise7 },
-  { path: '/exercise/8', component: Exercise8 },
-  { path: '/exercise/9', component: Exercise9 },
-  { path: '/exercise/10', component: Exercise10 },
-  { path: '/exercise/11', component: Exercise11 },
+  // { path: '/exercise/8', component: Exercise8 },
+  // { path: '/exercise/9', component: Exercise9 },
+  // { path: '/exercise/10', component: Exercise10 },
+  // { path: '/exercise/11', component: Exercise11 },
   { path: '/exercise/12', component: Exercise12 },
   { path: '/exercise/13', component: Exercise13 },
   { path: '/exercise/14', component: Exercise14 },
@@ -101,7 +101,44 @@ const routes = [
     children: [
       {path: 'requirement',component: () => import('@/views/Exercise/Exercise7/Exercise7Requirement.vue')},
       {path: 'solution',component: () => import('@/views/Exercise/Exercise7/Exercise7Solution.vue')},
-      {path: 'test',component: () => import('@/views/Exercise/Exercise7/Exercise7Test.vue')},
+      {path: 'test1',component: () => import('@/views/Exercise/Exercise7/Exercise7Test1.vue')},
+      {path: 'test2',component: () => import('@/views/Exercise/Exercise7/Exercise7Test2.vue')},
+      {path: 'test3',component: () => import('@/views/Exercise/Exercise7/Exercise7Test3.vue')},
+    ]
+  },
+  {
+    path: '/exercise/8',
+    component: () => import('@/views/Exercise/Exercise8/Exercise8.vue'),
+    children: [
+      {path: 'requirement',component: () => import('@/views/Exercise/Exercise8/Exercise8Requirement.vue')},
+      {path: 'solution',component: () => import('@/views/Exercise/Exercise8/Exercise8Solution.vue')}
+    ]
+  },
+  {
+    path: '/exercise/9',
+    component: () => import('@/views/Exercise/Exercise9/Exercise9.vue'),
+    children: [
+      {path: 'requirement',component: () => import('@/views/Exercise/Exercise9/Exercise9Requirement.vue')},
+      {path: 'solution',component: () => import('@/views/Exercise/Exercise9/Exercise9Solution.vue')},
+      {path: 'test',component: () => import('@/views/Exercise/Exercise9/Exercise9Test.vue')},
+    ]
+  },
+  {
+    path: '/exercise/10',
+    component: () => import('@/views/Exercise/Exercise10/Exercise10.vue'),
+    children: [
+      {path: 'requirement',component: () => import('@/views/Exercise/Exercise10/Exercise10Requirement.vue')},
+      {path: 'solution',component: () => import('@/views/Exercise/Exercise10/Exercise10Solution.vue')},
+      {path: 'test',component: () => import('@/views/Exercise/Exercise10/Exercise10Test.vue')},
+    ]
+  },
+  {
+    path: '/exercise/11',
+    component: () => import('@/views/Exercise/Exercise11/Exercise11.vue'),
+    children: [
+      {path: 'requirement',component: () => import('@/views/Exercise/Exercise11/Exercise11Requirement.vue')},
+      {path: 'solution',component: () => import('@/views/Exercise/Exercise11/Exercise11Solution.vue')},
+      {path: 'test',component: () => import('@/views/Exercise/Exercise11/Exercise11Test.vue')},
     ]
   },
 ]

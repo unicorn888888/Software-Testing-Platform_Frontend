@@ -11,7 +11,7 @@
       <p>
         C. 1<=a<=1000;1<=b<=1000;1<=c<=1000;
       </p>
-      <p><b>用边界值分析和设计测试用例</b></p>
+      <p><b>用等价类分析和设计测试用例</b></p>
 
     </div>
   </div>
@@ -19,6 +19,6 @@
 
 <script>
 export default {
-  name: 'Exercise1Requirement'
+  name: 'Exercise9Requirement'
 }
 </script>

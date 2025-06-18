@@ -1,0 +1,10 @@
+[
+  {"id": "TC1", "A": 3, "B": 4, "C": 5, "expectation": "普通三角形"},
+  {"id": "TC2", "A": 100, "B": 100, "C": 100, "expectation": "等边三角形"},
+  {"id": "TC3", "A": 50, "B": 50, "C": 80, "expectation": "等腰三角形"},
+  {"id": "TC4", "A": 0, "B": 50, "C": 50, "expectation": "超过范围"},
+  {"id": "TC5", "A": -1, "B": 50, "C": 50, "expectation": "超过范围"},
+  {"id": "TC6", "A": 10, "B": 30, "C": 50, "expectation": "不是三角形"},
+  {"id": "TC7", "A": 25, "B": 25, "C": 50, "expectation": "不是三角形"}
+
+]
