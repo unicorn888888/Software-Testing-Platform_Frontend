@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <h1>项目边界值测试</h1>
+    <h1>练习6-项目边界值测试</h1>
     <nav class="tab-nav">
       <router-link to="/exercise/6/requirement" class="tab" active-class="active">作业要求</router-link>
       <router-link to="/exercise/6/solution" class="tab" active-class="active">解题过程</router-link>

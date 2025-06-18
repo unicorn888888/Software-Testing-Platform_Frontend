@@ -1,0 +1,191 @@
+[
+    {
+      "id": "S1",
+      "V": -1,
+      "R": -1,
+      "D": -1,
+      "Coverage Combination": "1+21+24+25",
+      "Path": "ab",
+      "expectation": "不合法数据"
+    },
+    {
+      "id": "S2",
+      "V": -1,
+      "R": -1,
+      "D": 15,
+      "Coverage Combination": "2+22+24+25",
+      "Path": "ab",
+      "expectation": "不合法数据"
+    },
+    {
+      "id": "S3",
+      "V": -1,
+      "R": -1,
+      "D": 367,
+      "Coverage Combination": "3+22+24+25",
+      "Path": "ab",
+      "expectation": "不合法数据"
+    },
+    {
+      "id": "S4",
+      "V": -1,
+      "R": 0.2,
+      "D": -1,
+      "Coverage Combination": "4+21+24+25",
+      "Path": "ab",
+      "expectation": "不合法数据"
+    },
+    {
+      "id": "S5",
+      "V": -1,
+      "R": 0.2,
+      "D": 15,
+      "Coverage Combination": "5+22+24+25",
+      "Path": "ab",
+      "expectation": "不合法数据"
+    },
+    {
+      "id": "S6",
+      "V": -1,
+      "R": 0.2,
+      "D": 367,
+      "Coverage Combination": "6+22+24+25",
+      "Path": "ab",
+      "expectation": "不合法数据"
+    },
+    {
+      "id": "S7",
+      "V": -1,
+      "R": 2,
+      "D": -1,
+      "Coverage Combination": "7+21+23+26",
+      "Path": "ab",
+      "expectation": "不合法数据"
+    },
+    {
+      "id": "S8",
+      "V": -1,
+      "R": 2,
+      "D": 15,
+      "Coverage Combination": "8+22+23+26",
+      "Path": "ab",
+      "expectation": "不合法数据"
+    },
+    {
+      "id": "S9",
+      "V": -1,
+      "R": 2,
+      "D": 367,
+      "Coverage Combination": "9+22+23+26",
+      "Path": "ab",
+      "expectation": "不合法数据"
+    },
+    {
+      "id": "S10",
+      "V": 200,
+      "R": -1,
+      "D": -1,
+      "Coverage Combination": "10+21+24+25",
+      "Path": "ab",
+      "expectation": "不合法数据"
+    },
+    {
+      "id": "S11",
+      "V": 200,
+      "R": -1,
+      "D": 15,
+      "Coverage Combination": "11+22+24+25",
+      "Path": "ab",
+      "expectation": "不合法数据"
+    },
+    {
+      "id": "S12",
+      "V": 200,
+      "R": -1,
+      "D": 367,
+      "Coverage Combination": "12+22+24+25",
+      "Path": "ab",
+      "expectation": "不合法数据"
+    },
+    {
+      "id": "S13",
+      "V": 200,
+      "R": 0.2,
+      "D": -1,
+      "Coverage Combination": "13+21+24+25",
+      "Path": "ab",
+      "expectation": "不合法数据"
+    },
+    {
+      "id": "S14",
+      "V": 700,
+      "R": 0.8,
+      "D": 5,
+      "Coverage Combination": "14+19+23+25",
+      "Path": "acdf",
+      "expectation": 100
+    },
+    {
+      "id": "S15",
+      "V": 200,
+      "R": 0.2,
+      "D": 367,
+      "Coverage Combination": "15+22+24+25",
+      "Path": "ab",
+      "expectation": "不合法数据"
+    },
+    {
+      "id": "S16",
+      "V": 200,
+      "R": 2,
+      "D": -1,
+      "Coverage Combination": "16+21+23+26",
+      "Path": "ab",
+      "expectation": "不合法数据"
+    },
+    {
+      "id": "S17",
+      "V": 200,
+      "R": 2,
+      "D": 15,
+      "Coverage Combination": "17+22+23+26",
+      "Path": "ab",
+      "expectation": "不合法数据"
+    },
+    {
+      "id": "S18",
+      "V": 200,
+      "R": 2,
+      "D": 367,
+      "Coverage Combination": "18+22+23+26",
+      "Path": "ab",
+      "expectation": "不合法数据"
+    },
+    {
+      "id": "S19",
+      "V": 700,
+      "R": 0.1,
+      "D": 5,
+      "Coverage Combination": "14+19+24+25",
+      "Path": "acdg",
+      "expectation": 0
+    },
+    {
+      "id": "S20",
+      "V": 60,
+      "R": 0.7,
+      "D": 5,
+      "Coverage Combination": "14+21+23+25",
+      "Path": "acdh",
+      "expectation": 10
+    },
+    {
+      "id": "S21",
+      "V": 50,
+      "R": 0.9,
+      "D": 15,
+      "Coverage Combination": "14+22+23+26",
+      "Path": "acdi",
+      "expectation": 10
+    }
+  ]

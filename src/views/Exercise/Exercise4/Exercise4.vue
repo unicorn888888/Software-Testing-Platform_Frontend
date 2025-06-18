@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <h1>电脑销售系统</h1>
+    <h1>练习4-电脑销售系统</h1>
     <nav class="tab-nav">
       <router-link to="/exercise/4/requirement" class="tab" active-class="active">作业要求</router-link>
       <router-link to="/exercise/4/solution" class="tab" active-class="active">解题过程</router-link>

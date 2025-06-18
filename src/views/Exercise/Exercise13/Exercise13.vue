@@ -1,10 +1,9 @@
 <template>
   <div class="page">
-    <h1>练习10-万年历问题</h1>
+    <h1>练习13-ERP系统</h1>
     <nav class="tab-nav">
-      <router-link to="/exercise/10/requirement" class="tab" active-class="active">作业要求</router-link>
-      <router-link to="/exercise/10/solution" class="tab" active-class="active">解题过程</router-link>
-      <router-link to="/exercise/10/test" class="tab" active-class="active">测试用例</router-link>
+      <router-link to="/exercise/13/requirement" class="tab" active-class="active">作业要求</router-link>
+      <router-link to="/exercise/13/solution" class="tab" active-class="active">解题过程</router-link>
     </nav>
     <router-view />
   </div>
@@ -12,7 +11,7 @@
 
 <script>
 export default {
-  name: 'Exercise10'
+  name: 'Exercise13'
 }
 </script>
 

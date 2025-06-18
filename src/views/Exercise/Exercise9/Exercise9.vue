@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <h1>判断三角形类型</h1>
+    <h1>练习9-判断三角形类型</h1>
     <nav class="tab-nav">
       <router-link to="/exercise/9/requirement" class="tab" active-class="active">作业要求</router-link>
       <router-link to="/exercise/9/solution" class="tab" active-class="active">解题过程</router-link>

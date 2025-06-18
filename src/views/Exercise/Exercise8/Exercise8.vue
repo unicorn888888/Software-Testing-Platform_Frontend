@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <h1>实施C/S系统</h1>
+    <h1>练习8-实施C/S系统</h1>
     <nav class="tab-nav">
       <router-link to="/exercise/8/requirement" class="tab" active-class="active">作业要求</router-link>
       <router-link to="/exercise/8/solution" class="tab" active-class="active">解题过程</router-link>

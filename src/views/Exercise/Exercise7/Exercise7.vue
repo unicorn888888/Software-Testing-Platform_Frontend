@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <h1>电信收费问题</h1>
+    <h1>练习7-电信收费问题</h1>
     <nav class="tab-nav">
       <router-link to="/exercise/7/requirement" class="tab" active-class="active">作业要求</router-link>
       <router-link to="/exercise/7/solution" class="tab" active-class="active">解题过程</router-link>

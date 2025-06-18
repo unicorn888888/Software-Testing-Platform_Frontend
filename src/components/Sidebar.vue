@@ -159,4 +159,10 @@ li {
   padding-left: 10px;
   margin-top: 8px;
 }
+
+.router-link-active {
+  background-color: #1f2937; /* 深灰色背景 */
+  color: #ffffff !important; /* 白色文字 */
+}
+
 </style>
