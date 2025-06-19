@@ -137,20 +137,21 @@ export default defineComponent({
   },
   methods: {
     startTest() {
-  this.loading = true
-  this.showChart = false
-
-  setTimeout(() => {
-    this.loading = false
-    this.showChart = true
-
-    // 延迟 50ms 再初始化图表，确保 DOM 尺寸正常
-    setTimeout(() => {
-      this.$nextTick(() => {
-        this.renderChart()
-      })
-    }, 50)
-  }, 30000)
+      this.loading = true;
+      this.showChart = false;
+      fetch('http://localhost:8080/admin/test/run')
+        .then(response => {
+          this.loading = false;
+          if (response.status === 200) {
+            this.$message.success('测试成功');
+          } else {
+            this.$message.error('测试失败');
+          }
+        })
+        .catch(() => {
+          this.loading = false;
+          this.$message.error('测试失败');
+        });
     },
     renderChart() {
       const chartDom = this.$refs.chartContainer

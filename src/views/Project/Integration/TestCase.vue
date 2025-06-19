@@ -394,82 +394,79 @@ export default defineComponent({
   },
   methods: {
      startTest(idx) {
-  this.loadingIndex = idx
-  this.chartVisible[idx] = false
-  setTimeout(() => {
-    this.loadingIndex = null
-    this.chartVisible[idx] = true
-    this.$nextTick(() => {
-      this.drawChart(idx)
-    })
-  }, 30000)
-},
-drawChart(idx) {
-  let container = this.$refs['chart' + idx]
-  if (!container) return
-
-  // 兼容多个 ref 时的情况
-  if (Array.isArray(container)) {
-    container = container[0]
-  }
-
-  const staticData = idx === 0
-    ? [
-        { value: 2, name: '菜品分类查询', itemStyle: { color: '#5470C6' } },      // 蓝
-  { value: 4, name: '菜品分类删除', itemStyle: { color: '#91CC75' } },      // 绿
-  { value: 2, name: '套餐查询', itemStyle: { color: '#FAC858' } },          // 黄
-  { value: 3, name: '套餐起售停售', itemStyle: { color: '#EE6666' } },      // 红
-  { value: 2, name: '菜品分页查询', itemStyle: { color: '#73C0DE' } },      // 天蓝
-  { value: 2, name: '订单查询', itemStyle: { color: '#3BA272' } },          // 深绿
-  { value: 3, name: '接单', itemStyle: { color: '#FC8452' } },              // 橙
-  { value: 3, name: '订单派送', itemStyle: { color: '#9A60B4' } },          // 紫
-  { value: 2, name: '员工注册', itemStyle: { color: '#EA7CCC' } },          // 粉
-  { value: 3, name: '员工登录', itemStyle: { color: '#5470C6' } },          // 蓝（你可以换为其他色，我这里换了个备用）
-  { value: 4, name: '菜品分类删除', itemStyle: { color: '#91CC75' } },      // 绿（备用）
-  { value: 2, name: '菜品分类查询', itemStyle: { color: '#FAC858' } }   // 黄（备用）
-      ]
-    : [
-        { value: 3, name: '分类是否关联菜品', itemStyle: { color: '#EE6666' } },
-        { value: 2, name: '订单对应菜品/套餐明细', itemStyle: { color: '#73C0DE' } },
-        { value: 2, name: '查询菜品口味', itemStyle: { color: '#FAC858' } }
-      ]
-
-  const chart = echarts.init(container)
-  chart.setOption({
-    title: {
-      text: '模块测试占比 & 成功率',
-      left: 'center'
+      this.loadingIndex = idx;
+      this.chartVisible[idx] = false;
+      setTimeout(() => {
+        this.loadingIndex = null;
+        this.chartVisible[idx] = true;
+        this.$nextTick(() => {
+          this.drawChart(idx);
+        });
+      }, 5000);
     },
-    tooltip: {
-      trigger: 'item'
-    },
-    legend: {
-      bottom: 10,
-      left: 'center'
-    },
-    series: [
-      {
-        name: '测试模块',
-        type: 'pie',
-        radius: '50%',
-        data: staticData,
-        label: {
-          formatter: '{b}: {d}% (成功率100%)'
-        },
-        emphasis: {
-          itemStyle: {
-            shadowBlur: 10,
-            shadowOffsetX: 0,
-            shadowColor: 'rgba(0, 0, 0, 0.5)'
-          }
-        }
+    drawChart(idx) {
+      let container = this.$refs['chart' + idx]
+      if (!container) return
+
+      // 兼容多个 ref 时的情况
+      if (Array.isArray(container)) {
+        container = container[0]
       }
-    ]
-  })
-}
 
+      const staticData = idx === 0
+        ? [
+            { value: 2, name: '菜品分类查询', itemStyle: { color: '#5470C6' } },      // 蓝
+    { value: 4, name: '菜品分类删除', itemStyle: { color: '#91CC75' } },      // 绿
+    { value: 2, name: '套餐查询', itemStyle: { color: '#FAC858' } },          // 黄
+    { value: 3, name: '套餐起售停售', itemStyle: { color: '#EE6666' } },      // 红
+    { value: 2, name: '菜品分页查询', itemStyle: { color: '#73C0DE' } },      // 天蓝
+    { value: 2, name: '订单查询', itemStyle: { color: '#3BA272' } },          // 深绿
+    { value: 3, name: '接单', itemStyle: { color: '#FC8452' } },              // 橙
+    { value: 3, name: '订单派送', itemStyle: { color: '#9A60B4' } },          // 紫
+    { value: 2, name: '员工注册', itemStyle: { color: '#EA7CCC' } },          // 粉
+    { value: 3, name: '员工登录', itemStyle: { color: '#5470C6' } },          // 蓝（你可以换为其他色，我这里换了个备用）
+    { value: 4, name: '菜品分类删除', itemStyle: { color: '#91CC75' } },      // 绿（备用）
+    { value: 2, name: '菜品分类查询', itemStyle: { color: '#FAC858' } }   // 黄（备用）
+        ]
+        : [
+            { value: 3, name: '分类是否关联菜品', itemStyle: { color: '#EE6666' } },
+            { value: 2, name: '订单对应菜品/套餐明细', itemStyle: { color: '#73C0DE' } },
+            { value: 2, name: '查询菜品口味', itemStyle: { color: '#FAC858' } }
+          ]
 
-
+      const chart = echarts.init(container)
+      chart.setOption({
+        title: {
+          text: '模块测试占比 & 成功率',
+          left: 'center'
+        },
+        tooltip: {
+          trigger: 'item'
+        },
+        legend: {
+          bottom: 10,
+          left: 'center'
+        },
+        series: [
+          {
+            name: '测试模块',
+            type: 'pie',
+            radius: '50%',
+            data: staticData,
+            label: {
+              formatter: '{b}: {d}% (成功率100%)'
+            },
+            emphasis: {
+              itemStyle: {
+                shadowBlur: 10,
+                shadowOffsetX: 0,
+                shadowColor: 'rgba(0, 0, 0, 0.5)'
+              }
+            }
+          }
+        ]
+      })
+    }
   }
 })
 </script>

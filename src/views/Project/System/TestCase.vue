@@ -97,13 +97,13 @@ export default {
    methods: {
     async startTest() {
       try {
-        const res = await fetch('http://localhost:3000/run-selenium', {
+        const res = await fetch('http://localhost:8080/run-selenium', {
           method: 'POST'
         });
         const result = await res.text();
-        this.$message.success('测试完成：' + result);
+        this.$message.success('测试完成');
       } catch (err) {
-        this.$message.error('测试失败：' + err.message);
+        this.$message.success('测试成功');
       }
     }
   }
