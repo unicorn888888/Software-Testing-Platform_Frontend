@@ -76,6 +76,7 @@
 <script setup>
 import { ref } from 'vue';
 
+
 const mainTab = ref('script'); // 默认显示脚本测试
 const subTab = ref('interface'); // 性能测试中默认显示接口
 

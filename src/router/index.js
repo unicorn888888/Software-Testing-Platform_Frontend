@@ -3,12 +3,13 @@ import Home from '../views/Home.vue'
 //import Unit from '../views/Project/Unit/Unit.vue'
 //import Integration from '../views/Project/Integration/Integration.vue'
 //import System from '../views/Project/System/System.vue'
-// import test from '../views/Exercise/Test/Exercise1.vue'
+import Statictest from '../views/Project/StaticTest.vue'
 
 
 
 const routes = [
   { path: '/', component: Home },
+  { path: '/Project/Statictest', component: Statictest },
   {
     path: '/Project/Unit',
     component: () => import('@/views/Project/Unit/Unit.vue'),
